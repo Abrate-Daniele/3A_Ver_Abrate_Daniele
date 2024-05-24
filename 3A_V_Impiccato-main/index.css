@@ -1,0 +1,101 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+    height: 100vh;
+    font-family: monospace;
+}
+
+header{
+    position: relative;
+}
+
+img{
+    width: 90vw;
+    height: 45vh;
+    object-fit: fill;
+}
+
+#secLivelli{
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+}
+
+#secLivelli button{
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+    margin-right: 10px;
+    font-size: 14pt;
+    font-weight: bold;
+    color:rgb(193, 31, 31);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+#secLivelli button:hover{
+    transform: scale(1.5);
+}
+
+#secLivelli button:first-child{
+    background-color: yellow;
+}
+#secLivelli button:nth-child(2){
+    background-color: #f39201;
+}
+#secLivelli button:last-child{
+    background-color: #DD7401;
+}
+
+main{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#secParolaNascosta article{
+    font-size: 100pt;
+    margin-top:-100px;
+    margin-right: 10px;
+}
+
+#secParolaNascosta article:hover{
+    font-size: 100pt;
+    margin-top:-50px;
+    margin-right: 10px;
+    transform: scale(1.5);
+    color: #DD7401;
+    cursor: pointer;
+}
+
+#secLettere, #secParolaNascosta{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+#secLettere article{
+    width: 100px;
+    font-size: 50pt;
+    background-color: #FAAC01;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+#secLettere article:hover{
+    transform: scale(1.5);
+    background-color: #DD7401;
+    cursor: pointer;
+}
